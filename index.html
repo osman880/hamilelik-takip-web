@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamilelik Takip — Destek</title>
+    <title>Gebem: Hamilelik & Gebelik — Destek</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -57,6 +57,59 @@
             color: #7CB342;
             font-weight: bold;
         }
+        .pro-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #F9A825, #F57F17);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 8px;
+            margin-left: 6px;
+            vertical-align: middle;
+            letter-spacing: 0.5px;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 8px;
+        }
+        .pricing-card {
+            border: 2px solid #E8F5E9;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+        .pricing-card.best {
+            border-color: #2E7D32;
+            background: #F1F8E9;
+        }
+        .pricing-card .label {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 6px;
+        }
+        .pricing-card .price {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2E7D32;
+        }
+        .pricing-card .period {
+            font-size: 13px;
+            color: #888;
+            margin-top: 2px;
+        }
+        .pricing-card .save {
+            display: inline-block;
+            background: #2E7D32;
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 8px;
+            margin-top: 6px;
+        }
         .contact-info {
             font-size: 16px;
         }
@@ -90,32 +143,62 @@
             color: #999;
             font-size: 13px;
         }
+        @media (max-width: 480px) {
+            .pricing-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Hamilelik Takip</h1>
+            <h1>Gebem: Hamilelik & Gebelik</h1>
             <p>Gebelik Takip & Günlük Rehber</p>
         </div>
 
         <div class="card">
             <h2>Uygulama Hakkında</h2>
-            <p>Hamilelik Takip, anne adayları için geliştirilmiş kapsamlı bir gebelik takip uygulamasıdır. Hamilelik sürecinizi hafta hafta takip edin, günlük sağlık kayıtlarınızı tutun ve doğuma hazırlanın.</p>
+            <p>Gebem, anne adayları için geliştirilmiş kapsamlı bir gebelik takip uygulamasıdır. Hamilelik sürecinizi hafta hafta takip edin, günlük sağlık kayıtlarınızı tutun ve doğuma hazırlanın. Pro üyelikle yapay zeka destekli özelliklerden yararlanın.</p>
         </div>
 
         <div class="card">
-            <h2>Özellikler</h2>
+            <h2>Ücretsiz Özellikler</h2>
             <ul class="features">
                 <li>Haftalık gebelik takibi ve bebek gelişimi</li>
                 <li>Günlük sağlık takibi (kilo, ruh hali, semptomlar)</li>
                 <li>Takvim ve etkinlik planlama (doktor, ultrason)</li>
-                <li>Hamilelik rehberi (beslenme, kitap, makale, video)</li>
                 <li>Alışveriş listeleri (yenidoğan ihtiyaçları, hastane çantası)</li>
                 <li>Hatırlatıcılar (su, vitamin, randevu)</li>
                 <li>Notlar ve doktor soruları</li>
                 <li>Karanlık mod ve çoklu dil desteği (TR/EN)</li>
             </ul>
+        </div>
+
+        <div class="card">
+            <h2>Pro Özellikler <span class="pro-badge">PRO</span></h2>
+            <ul class="features">
+                <li>AI Haftalık Rapor — Yapay zeka ile haftalık kişisel analiz ve öneriler</li>
+                <li>AI Doktor Asistanı — Sorularınızı yapay zekaya sorun, anında yanıt alın</li>
+                <li>Kitap Bölümü — Hamilelik ve ebeveynlik kitaplarına erişim</li>
+                <li>Reklamsız Deneyim — Hiçbir reklam görmeden kullanın</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h2>Pro Üyelik Fiyatları</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="label">Aylık</div>
+                    <div class="price">₺69,99</div>
+                    <div class="period">/ ay</div>
+                </div>
+                <div class="pricing-card best">
+                    <div class="label">Yıllık</div>
+                    <div class="price">₺449,99</div>
+                    <div class="period">/ yıl</div>
+                    <span class="save">%46 Tasarruf</span>
+                </div>
+            </div>
+            <p style="margin-top:16px; font-size:14px; color:#888;">Abonelikler App Store üzerinden yönetilir. İstediğiniz zaman iptal edebilirsiniz.</p>
         </div>
 
         <div class="card">
@@ -132,7 +215,7 @@
         </div>
 
         <div class="footer">
-            <p>&copy; 2026 Hamilelik Takip. Tüm hakları saklıdır.</p>
+            <p>&copy; 2026 Gebem: Hamilelik & Gebelik. Tüm hakları saklıdır.</p>
         </div>
     </div>
 </body>
